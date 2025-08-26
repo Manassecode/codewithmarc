@@ -529,6 +529,9 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
 
 
@@ -548,6 +551,16 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <!-- Script pour désactiver le preloader -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const preloader = document.getElementById("preloader");
+  if (preloader) {
+    preloader.style.display = "none";
+  }
+});
+</script>
+
 
 </body>
 
